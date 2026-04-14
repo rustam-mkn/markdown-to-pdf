@@ -3,7 +3,6 @@
 dist/*.pdf
 
 # Markdown source files
-*.md
 source/markdown/*.md
 
 # Output images
