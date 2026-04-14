@@ -5,6 +5,9 @@ dist/*.pdf
 # Markdown source files
 source/markdown/*.md
 
+# HTML files
+source/html/*.html
+
 # Output images
 output/
 
