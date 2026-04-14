@@ -1,0 +1,21 @@
+# PDF files
+*.pdf
+dist/*.pdf
+
+# Markdown source files
+*.md
+source/markdown/*.md
+
+# Output images
+output/
+
+# Node modules
+node_modules/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/

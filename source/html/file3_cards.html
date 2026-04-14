@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Гайд. «Настройка объявления на Циан»</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', sans-serif;
+            background: #f5f5f5;
+        }
+        
+        .card {
+            width: 600px;
+            background: white;
+            margin: 0 auto 20px;
+            padding: 50px 60px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            page-break-after: always;
+        }
+        
+        .card-title {
+            width: 600px;
+            height: 800px;
+            background: #000;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            padding: 80px 60px;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        .card-title::before {
+            content: '';
+            position: absolute;
+            width: 900px;
+            height: 900px;
+            background: radial-gradient(circle, rgba(139, 0, 139, 0.8) 0%, rgba(75, 0, 130, 0.6) 30%, rgba(102, 51, 153, 0.4) 60%, transparent 100%);
+            border-radius: 50%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            filter: blur(100px);
+        }
+        
+        .card-title-text {
+            position: relative;
+            z-index: 1;
+            color: white;
+            font-size: 46px;
+            font-weight: 900;
+            line-height: 1.4;
+            letter-spacing: 0.02em;
+            text-transform: uppercase;
+        }
+        
+        .card-title-text .highlight {
+            color: #FFE66D;
+        }
+        
+        .card-content h2 {
+            font-size: 30px;
+            font-weight: 700;
+            margin: 0 0 28px 0;
+            color: #000;
+        }
+        
+        .card-content h3 {
+            font-size: 24px;
+            font-weight: 600;
+            margin: 30px 0 18px;
+            color: #000;
+        }
+        
+        .card-content p {
+            font-size: 20px;
+            line-height: 1.6;
+            margin-bottom: 22px;
+            color: #333;
+        }
+        
+        .card-content ul {
+            list-style: none;
+            margin: 18px 0;
+        }
+        
+        .card-content li {
+            font-size: 20px;
+            line-height: 1.8;
+            margin-bottom: 10px;
+            padding-left: 28px;
+            position: relative;
+            color: #333;
+        }
+        
+        .card-content li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+            font-size: 24px;
+        }
+        
+        .checklist li:before {
+            content: "☐";
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 22px 0;
+            font-size: 18px;
+            border: 2px dashed #c8b5e8;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+        
+        th {
+            background: #f3edff;
+            padding: 14px 12px;
+            text-align: left;
+            font-weight: 600;
+            border: 2px dashed #c8b5e8;
+            color: #000;
+        }
+        
+        td {
+            padding: 14px 12px;
+            border: 2px dashed #c8b5e8;
+            color: #333;
+            vertical-align: top;
+        }
+        
+        td:first-child {
+            text-align: center;
+            font-weight: 600;
+            color: #000;
+        }
+        
+        .info-box {
+            background: #f3edff;
+            border: 3px dashed #c8b5e8;
+            border-radius: 12px;
+            padding: 28px;
+            margin: 28px 0;
+            font-size: 20px;
+            color: #333;
+        }
+        
+        .warning-box {
+            background: #fff8e1;
+            border: 3px dashed #ffd54f;
+            border-radius: 12px;
+            padding: 28px;
+            margin: 28px 0;
+            font-size: 20px;
+            color: #333;
+        }
+        
+        strong {
+            font-weight: 600;
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Карточка 1: Титульная -->
+<div class="card-title">
+    <div class="card-title-text">
+        <span class="highlight">Гайд:</span><br>«Настройка<br>объявления<br>на Циан»
+    </div>
+</div>
+
+<!-- Карточка 2: Введение -->
+<div class="card">
+    <div class="card-content">
+        <p>Циан — более строгая площадка, чем Авито. Чтобы ваше объявление прошло модерацию и попало в топ, нужно соблюдать требования. Этот гайд — пошаговая инструкция.</p>
+    </div>
+</div>
+
+<!-- Карточка 3: Подготовка к размещению -->
+<div class="card">
+    <div class="card-content">
+        <h2>ПОДГОТОВКА К РАЗМЕЩЕНИЮ</h2>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th style="width: 200px;">Действие</th>
+                    <th>Описание</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Подготовить фото</td>
+                    <td>5–10 качественных фото (подъезд, коридор, дверь, внутри, стены, потолок, пол, вентиляция)</td>
+                </tr>
+                <tr>
+                    <td>Замерить площадь</td>
+                    <td>Точная цифра, можно с рулеткой на фото</td>
+                </tr>
+                <tr>
+                    <td>Уточнить адрес</td>
+                    <td>Точный адрес с подъездом, этажом, номером бокса</td>
+                </tr>
+                <tr>
+                    <td>Определить цену</td>
+                    <td>Рыночная, с учетом коммуналки</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<!-- Карточка 4: Шаг 1 -->
+<div class="card">
+    <div class="card-content">
+        <h2>ПОШАГОВОЕ СОЗДАНИЕ ОБЪЯВЛЕНИЯ</h2>
+        
+        <h3>Шаг 1. Выбор категории</h3>
+        <ul>
+            <li>Категория: «Сдать»</li>
+            <li>Тип недвижимости: «Коммерческая»</li>
+            <li>Подтип: «Склад/производство»</li>
+        </ul>
+    </div>
+</div>
+
+<!-- Карточка 5: Шаг 2 -->
+<div class="card">
+    <div class="card-content">
+        <h3>Шаг 2. Адрес</h3>
+        <ul>
+            <li>Указать точный адрес с привязкой к карте</li>
+            <li>Если точного адреса нет — указать ЖК или ближайшую улицу</li>
+            <li>Добавить ориентиры (например, «рядом с ТЦ Мега»)</li>
+        </ul>
+    </div>
+</div>
+
+<!-- Карточка 6: Шаг 3 Характеристики -->
+<div class="card">
+    <div class="card-content">
+        <h2>Шаг 3. Характеристики</h2>
+        <p style="margin-bottom: 28px;"><strong>(обязательно заполнить все)</strong></p>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th style="width: 180px;">Поле</th>
+                    <th>Как заполнить</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Площадь</td>
+                    <td>Точная цифра (например, 4 кв.м)</td>
+                </tr>
+                <tr>
+                    <td>Этаж</td>
+                    <td>Подвал / цоколь / 1 этаж</td>
+                </tr>
+                <tr>
+                    <td>Тип объекта</td>
+                    <td>Складское помещение</td>
+                </tr>
+                <tr>
+                    <td>Состояние</td>
+                    <td>Хорошее / Сделан ремонт / Без отделки</td>
+                </tr>
+                <tr>
+                    <td>Коммуникации</td>
+                    <td>Свет, вентиляция (если есть)</td>
+                </tr>
+                <tr>
+                    <td>Залог</td>
+                    <td>Указать, если есть</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<!-- Карточка 7: Шаг 4 Фото -->
+<div class="card">
+    <div class="card-content">
+        <h2>Шаг 4. Фото</h2>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th style="width: 180px;">Требование</th>
+                    <th>Что делать</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Минимум 3 фото</td>
+                    <td>Но лучше 5–10</td>
+                </tr>
+                <tr>
+                    <td>Первое фото</td>
+                    <td>Дверь кладовки или общий план внутри</td>
+                </tr>
+                <tr>
+                    <td>Разрешение</td>
+                    <td>Не менее 1024×768</td>
+                </tr>
+                <tr>
+                    <td>Без фильтров</td>
+                    <td>Фото должны быть реальными, не обработанными</td>
+                </tr>
+                <tr>
+                    <td>Разные ракурсы</td>
+                    <td>Вход, коридор, дверь, внутри (все стены), пол, потолок, вентиляция</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<!-- Карточка 10: Шаг 5 Описание с примером -->
+<div class="card">
+    <div class="card-content">
+        <h2>Шаг 5. Описание</h2>
+        
+        <ul>
+            <li>Заголовок (первая строка): «Сдается кладовка [площадь] кв.м, сухая, с замком»</li>
+            <li>Локация: ЖК, адрес, этаж, номер</li>
+            <li>Характеристики: площадь, высота, вентиляция, свет, замок</li>
+            <li>Состояние: сухо, чисто, ремонт</li>
+            <li>Для кого: для вещей, шин, колясок, товарного запаса</li>
+            <li>Условия: цена, залог, срок аренды</li>
+            <li>Контакты: звоните или пишите</li>
+        </ul>
+        
+        <h3 style="margin-top: 32px;">Пример описания:</h3>
+        
+        <div class="info-box">
+            <p>Сдается светлая кладовка 4 кв.м в ЖК «Солнечный» (ул. Ленина, 15, подъезд 3, этаж -1, бокс 12).</p>
+            
+            <p style="margin-top: 18px;"><strong>Характеристики:</strong><br>
+            ✅ Площадь 4 кв.м<br>
+            ✅ Высота потолков 2,5 м<br>
+            ✅ Работающая вентиляция<br>
+            ✅ Проведен свет<br>
+            ✅ Замок врезной (меняется при заезде)</p>
+            
+            <p style="margin-top: 18px;"><strong>Состояние:</strong> чисто, сухо, стены покрашены. Вход рядом с лифтом — удобно заносить вещи.</p>
+            
+            <p style="margin-top: 18px;"><strong>Идеально подойдет для:</strong><br>
+            📦 хранения вещей, коробок<br>
+            🚲 велосипедов, колясок<br>
+            🛞 сезонных шин<br>
+            📦 товарного запаса</p>
+            
+            <p style="margin-top: 18px;"><strong>Условия:</strong><br>
+            💰 3000 руб/мес (коммуналка включена)<br>
+            🔑 залог 3000 руб<br>
+            📅 аренда от 3 месяцев</p>
+            
+            <p style="margin-top: 18px;">Звоните или пишите в чат — покажу в удобное время!</p>
+        </div>
+    </div>
+</div>
+
+<!-- Карточка 14: Шаг 6-7 -->
+<div class="card">
+    <div class="card-content">
+        <h2>Шаг 6. Цена</h2>
+        <ul>
+            <li>Указать точную сумму</li>
+            <li>Добавить в описание: «коммуналка включена» или «коммуналка оплачивается отдельно»</li>
+        </ul>
+        
+        <h3>Шаг 7. Публикация</h3>
+        <ul>
+            <li>Нажать «Опубликовать»</li>
+            <li>Дождаться модерации (от 30 минут до 24 часов)</li>
+        </ul>
+    </div>
+</div>
+
+<!-- Карточка 12: После публикации -->
+<div class="card">
+    <div class="card-content">
+        <h2>ПОСЛЕ ПУБЛИКАЦИИ</h2>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th style="width: 320px;">Действие</th>
+                    <th>Как часто</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Проверить, прошла ли модерация</td>
+                    <td>Через 2–4 часа</td>
+                </tr>
+                <tr>
+                    <td>Если модерация не прошла — исправить замечания</td>
+                    <td>Сразу</td>
+                </tr>
+                <tr>
+                    <td>Обновлять объявление (редактировать дату)</td>
+                    <td>Раз в 5–7 дней</td>
+                </tr>
+                <tr>
+                    <td>Отвечать на отклики</td>
+                    <td>Максимально быстро</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<!-- Карточка 13: Почему могут отклонить -->
+<div class="card">
+    <div class="card-content">
+        <h2>ПОЧЕМУ МОГУТ ОТКЛОНИТЬ ОБЪЯВЛЕНИЕ</h2>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th style="width: 280px;">Причина</th>
+                    <th>Решение</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Мало фото</td>
+                    <td>Добавить минимум 5 качественных фото</td>
+                </tr>
+                <tr>
+                    <td>Плохое качество фото</td>
+                    <td>Переснять при хорошем освещении</td>
+                </tr>
+                <tr>
+                    <td>Нет адреса на карте</td>
+                    <td>Привязать к карте</td>
+                </tr>
+                <tr>
+                    <td>Не заполнены характеристики</td>
+                    <td>Заполнить все поля</td>
+                </tr>
+                <tr>
+                    <td>Слишком короткое описание</td>
+                    <td>Написать подробно, структурированно</td>
+                </tr>
+                <tr>
+                    <td>Цена сильно ниже/выше рынка</td>
+                    <td>Скорректировать</td>
+                </tr>
+                <tr>
+                    <td>Кладовая — нежилое помещение, но выбрана категория «Жилая»</td>
+                    <td>Сменить категорию на «Коммерческая»</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<!-- Карточка 18: Платные услуги -->
+<div class="card">
+    <div class="card-content">
+        <h2>ПЛАТНЫЕ УСЛУГИ НА ЦИАН</h2>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th style="width: 200px;">Услуга</th>
+                    <th>Когда нужна</th>
+                    <th style="width: 140px;">Цена</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Турбо-продажа</td>
+                    <td>Если кладовка не сдается больше 2 недель</td>
+                    <td>от 199 ₽/сутки</td>
+                </tr>
+                <tr>
+                    <td>XL-объявление</td>
+                    <td>Если хотите выделиться среди конкурентов</td>
+                    <td>от 399 ₽/мес</td>
+                </tr>
+                <tr>
+                    <td>Поднятие в топ</td>
+                    <td>В момент публикации или после обновления</td>
+                    <td>Бесплатно (алгоритмы)</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<!-- Карточка 19: Рекомендация -->
+<div class="card">
+    <div class="card-content">
+        <div class="warning-box">
+            <p><strong>Рекомендация:</strong></p>
+            <p style="margin-top: 14px;">Сначала опубликуйте бесплатное объявление. Если через 2 недели нет звонков — добавьте Турбо-продажу на 7 дней.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Карточка 17: Чек-лист для Циан -->
+<div class="card">
+    <div class="card-content">
+        <h2>ЧЕК-ЛИСТ ДЛЯ ЦИАН</h2>
+        
+        <ul class="checklist">
+            <li>Фото: 5–10 качественных снимков (подъезд, коридор, дверь, внутри)</li>
+            <li>Адрес: точный, с привязкой к карте</li>
+            <li>Характеристики: заполнены все поля</li>
+            <li>Описание: структурированное, с ключевыми словами</li>
+            <li>Цена: рыночная</li>
+            <li>Модерация: пройдена</li>
+            <li>Обновление: раз в 5–7 дней</li>
+            <li>Отклики: ответ в течение часа</li>
+        </ul>
+    </div>
+</div>
+
+</body>
+</html>
