@@ -8,9 +8,6 @@ source/markdown/*.md
 # HTML files
 source/html/*.html
 
-# Output images
-output/
-
 # Node modules
 node_modules/
 
