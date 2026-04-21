@@ -93,8 +93,8 @@ async function createVectorPDF(htmlFile, outputPdfPath) {
 
 async function main() {
     const task = {
-        html: 'source/html/file5_cards_vector.html',
-        outputPdf: 'dist/Модуль 5. Сравнительные таблицы систем налогообложения для ИП с кладовками (vector).pdf'
+        html: 'source/html/file_contracts_cards.html',
+        outputPdf: 'dist/Доп. материал_ «Шаблоны договоров и калькуляция».pdf'
     };
     
     await createVectorPDF(task.html, task.outputPdf);
