@@ -52,7 +52,3 @@ scripts/
   create-all-pdfs.js - Скрипт генерации всех PDF
 dist/           - Готовые PDF-файлы
 ```
-
-## Лицензия
-
-MIT
